@@ -1,6 +1,6 @@
 # Exercice Pratique : Système d'Inscription Sécurisé (Fastify + TypeScript + Fetch)
 
-Ce document contient le sujet complet, les indications pas-à-pas et la solution entièrement annotée avec des repères visuels (**⚠️ À CHANGER**) pour l'implémentation d'une brique d'authentification sécurisée (Backend et Frontend).
+Ce document contient le sujet complet, les indications pas-à-pas et la solution entièrement annotée avec des repères visuels
 
 ---
 
