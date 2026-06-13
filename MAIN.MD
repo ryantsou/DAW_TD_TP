@@ -589,9 +589,3 @@ export function MonComposant({ titre, onAction }: MonComposantProps) {
 }
 
 ```
-
-"""
-
-
-
-```
