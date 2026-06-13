@@ -80,7 +80,7 @@ export type CreateMonEntiteDTO = Omit<MonEntite, 'id'>;
 *📁 Fichier Backend : `src/server.ts` (⚠️ Souvent appelé `index.js` ou `index.ts` )*
 
 ```typescript
-// ⚠️ POINT D'ENTRÉE BACKEND : C'est ici que tu configures ton API et tes routes.
+// ⚠️ POINT D'ENTRÉE BACKEND : C'est ici les conf API et routes.
 import Fastify from "fastify";
 import cors from "@fastify/cors";
 
@@ -185,7 +185,7 @@ start();
 
 ## 4. BASE DE DONNÉES (BETTER-SQLITE3)
 
-*📁 Fichier recommandé (Backend) : `src/database.ts` ou `src/db.ts`*
+*📁 Fichier Backend : `src/database.ts` ou `src/db.ts`*
 
 ```typescript
 import Sqlite3 from "better-sqlite3";
@@ -246,7 +246,7 @@ const deleteData = (id: number) => {
 
 ### HACHAGE (Web Crypto API - Natif JS)
 
-*📁 Fichier recommandé (Backend) : `src/security.ts` ou `src/auth.ts`*
+*📁 Fichier Backend : `src/security.ts` ou `src/auth.ts`*
 
 ```typescript
 async function hashPassword(password: string): Promise<string> {
@@ -388,7 +388,7 @@ window.addEventListener("load", () => {
 
 ### LOCALSTORAGE
 
-*📁 Fichier recommandé (Frontend) : `src/storage.ts` ou au début de `src/main.ts`*
+*📁 Fichier Frontend : `src/storage.ts` ou au début de `src/main.ts`*
 
 ```typescript
 // ⚠️ À CHANGER : Le nom de la clé (ex: "user_auth", "app_state", ou "mon_projet_data")
@@ -408,7 +408,7 @@ const storage = {
 
 ### FONCTION GLOBALE FETCH (À PRIVILÉGIER)
 
-*📁 Fichier recommandé (Frontend) : `src/api.ts`*
+*📁 Fichier Frontend : `src/api.ts`*
 
 ```typescript
 const API_URL = "http://localhost:8080";
@@ -448,7 +448,7 @@ async function apiCall<T = any>(endpoint: string, method: string = "GET", body?:
 
 ## 9. FRONTEND : ARCHITECTURE MVC (CLASSES)
 
-*📁 Fichiers (Frontend) : À placer dans un dossier `src/mvc/`*
+*📁 Fichiers Frontend : À placer dans un dossier `src/mvc/`*
 
 ```typescript
 // --- 1. OBSERVER / NOTIFIER (pattern.ts) ---
@@ -527,7 +527,7 @@ export class MaVue extends Observer {
 
 ## 10. FRONTEND : REACT
 
-*📁 Fichier recommandé (Frontend) : `src/components/MonComposant.tsx` (⚠️ Attention, l'extension est bien `.tsx` !)*
+*📁 Fichier Frontend : `src/components/MonComposant.tsx`*
 
 ```typescript
 import React, { useState, useRef, MouseEvent } from 'react';
